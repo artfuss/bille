@@ -7,11 +7,11 @@
         </script>
     </head>
   <body>
-    <video controls></video>
+    <video id="player" controls></video>
     <script>
         var videoId = window.location.search.split('?v=')[1];
         console.log(videoId);
-        document.getElementsByName('video').setAttribute('data-yt2html5', 'https://www.youtube.com/watch?v=' + videoId);
+        document.getElementById('player').setAttribute('data-yt2html5', 'https://www.youtube.com/watch?v=' + videoId);
         new YouTubeToHtml5();
     </script>
   </body>
