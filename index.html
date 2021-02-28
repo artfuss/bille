@@ -9,6 +9,8 @@
   <body>
     <video data-yt2html5="https://www.youtube.com/watch?v=8UBRpZJLXOo" controls></video>
     <script>
+        var videoId = window.location.search.split('?v=')[1];
+        console.log(videoId);
         new YouTubeToHtml5();
     </script>
   </body>
